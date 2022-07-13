@@ -1,1 +1,38 @@
+package week1.assignments;
 
+public class MyMobile {
+	byte Storage = 64;
+	short price = 19999;
+	int EMInum = 124044072;
+	long Simnum = 7397581469l;
+	char Ram = '6';
+	boolean OnscreenFingerprintSensor = true;
+	String Processor = "****";
+
+	public void makeCall() {
+		System.out.println("Make a Call to this Mobile number : " + Simnum);
+		System.out.println("Calling to this number..." + Simnum);
+
+	}
+
+	public void sendMsg() {
+		System.out.println("Sending the message to " + Simnum);
+
+	}
+
+	private void payBills() {
+		System.out.println("Make a payment of : rs." + price);
+		System.out.println("Payment is done.");
+
+	}
+
+	public static void main(String[] args) {
+		MyMobile phone = new MyMobile();
+		phone.makeCall();
+		phone.sendMsg();
+		System.out.println("In display Fingerprint : " + phone.OnscreenFingerprintSensor);
+		System.out.println("Enter the PIN : " + phone.Processor);
+		phone.payBills();
+
+	}
+}
