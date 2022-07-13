@@ -1,0 +1,20 @@
+package week1.assignments;
+
+public class PrimeOrNot {
+	public static void main(String[] args) {
+		int x = 13;
+		boolean flag = false;
+		for (int i = 2; i <= x / 2; i++) {
+			if (x % i == 0) {
+				flag = true;
+				break;
+			}
+		}
+		if (flag != true) {
+			System.out.println(+x + " is a Prime number");
+		} else {
+			System.out.println(+x + " is not a Prime number");
+		}
+	}
+
+}
