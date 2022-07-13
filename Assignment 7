@@ -1,0 +1,14 @@
+package week1.assignments;
+
+public class NegativeNumberConversion {
+	public static void main(String[] args) {
+		int a = -333;
+		if (a < 0) {
+			a = ~(--a);
+			System.out.println("The conversion of given Negative number into Positive Number as " + a + ".");
+		} else {
+			System.out.println("The given number " + a + " is not a negative value.");
+		}
+	}
+
+}
