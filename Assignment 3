@@ -1,0 +1,32 @@
+package week1.assignments;
+
+public class Calculator {
+	protected void add(int num1, int num2, int num3) {
+		System.out.println(num1 + num2 + num3);
+	}
+
+	protected void sub(int num1, int num2) {
+		System.out.println(num1 - num2);
+	}
+
+	protected void mul(double num1, double num2) {
+		System.out.println(num1 * num2);
+	}
+
+	protected void divide(float num1, float num2) {
+		System.out.println(num1 / num2);
+	}
+
+}
+package week1.assignments;
+
+public class MyCalculator {
+	public static void main(String[] args) {
+		Calculator cal = new Calculator();
+		cal.add(2563, 156526, 8492694);
+		cal.sub(287456123, 897461818);
+		cal.mul(56823456.798781389, 98765874.39871521);
+		cal.divide(93.5427f, 38.5168f);
+	}
+
+}
